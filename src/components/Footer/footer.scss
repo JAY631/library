@@ -1,0 +1,104 @@
+.main-footer {
+  color: white;
+  background-color: #001c38;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  line-height: 1.8571428571;
+
+  ul {
+    list-style: none;
+  }
+
+  &__wrap {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    align-content: flex-start;
+    &-start{
+      height: 183px;
+      width: 349px;
+    }
+    &-end {
+      position: relative;
+      width: 100%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      //  -ms-flex-line-pack: start;
+      align-content: flex-start;
+      padding: 10px;
+    }
+
+    &-en {
+      color: #001c38;
+    }
+  }
+
+  h4 p {
+    padding: 10px;
+  }
+
+  // Сделал много правок стилей
+  .row:first-child {
+    flex-direction: column;
+
+    h3 {
+      padding: 25px;
+    }
+
+    .col-4 {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .main-footer__wrap-end {
+      width: 33.3%;
+    }
+    .one-piece{
+      width: 50%;
+      padding: 0 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .main-footer__wrap-end {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .main-footer__wrap-end {
+        width: 100%;
+      }
+      .one-piece{
+        width: 100%;
+      }
+    }
+   
+  }
+  // Конец моих стилей
+}
+
+.link {
+  display: flex;
+
+  a {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 0.5em;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+
+.map {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.piece{
+  padding-right: 10px;
+}
+.scss{
+  background-color: #7a7a7a;
+}

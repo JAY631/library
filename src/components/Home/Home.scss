@@ -1,0 +1,58 @@
+.home{
+background-color: #f2f2f2;
+    &__product{
+    margin-top: 11px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px slategrey;
+
+    // Дописал 3 стиля карточек
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    // Конец моих стилей
+
+        &-img{
+            width: 100%;
+        }
+        &-title{
+                color: #E9A33E;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                margin-left: 13.8px;
+                
+        }
+        &-description{
+            color: #8c8c8c;
+            font-family: "Nunito", Sans-serif;
+            padding: 10px;
+           line-height: 26px;
+           a{
+          
+            font-family: "Nunito", Sans-serif;
+            font-weight: 600;
+            
+            color: #003D97;
+            background-color: #ffffff;
+            cursor: pointer;
+           
+               text-decoration: none;
+               text-transform: uppercase;
+           }
+           
+           
+        }
+       
+        
+    }
+    
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    padding-bottom: 15px;
+}
