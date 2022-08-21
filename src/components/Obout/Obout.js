@@ -1,11 +1,15 @@
 import React from 'react';
 import "./Obout.scss"
 import image from "../../img/emakom.png";
-
+import {useNavigate, useParams} from 'react-router-dom';
 const Obout = () => {
+    const navigate = useNavigate()
     return (
         <section className='about'>
             <div className='container'>
+            <button className='navigate' onClick={()=>{
+                    navigate(-1)
+                }}><i className="fa-solid fa-arrow-left-long"></i></button>
                 <div className='row'>
                     <div className='about__product'>
                         <div className='about__product-title'>
@@ -40,6 +44,8 @@ const Obout = () => {
                         <div className='about__product-wrapper'>
                             <p className=''>Мы строим в первую очередь для любимых жителей страны.</p>
                         </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lU_njgVp8JY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/z6Md3FtKuM4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className='about__section'></div>
                     <div className='about__flex'>

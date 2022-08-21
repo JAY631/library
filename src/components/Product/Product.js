@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import {getProduct} from '../../redux/reducers/items';
 import "./Product.scss";
 
@@ -8,12 +8,16 @@ const Product = () => {
     const params = useParams();
     const dispatch = useDispatch();
     const product = useSelector(s => s.items.product);
+    const navigate = useNavigate()
     useEffect(() => {
         dispatch(getProduct(params.idx))
     }, []);
     return (
         <section className='product'>
             <div className='container'>
+                <button className='navigate' onClick={()=>{
+                    navigate(-1)
+                }}><i className="fa-solid fa-arrow-left-long"></i></button>
                 <div className='product__row'>
                     <h3 className='product__title'>{product.title}</h3>
                     <img width={600} height="450" className='product__img' src={product.image} alt=""/>

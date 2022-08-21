@@ -4,14 +4,14 @@ import "./footer.scss";
 
 const Footer = () => {
 return (
-    <footer className='main-footer'>
+    <footer className='footer'>
         <div className='container'>
             <div className='row'>
 
                 {/* Изменил адреса в футере */}
                 <h3>Hаши контакты</h3>                    
                 <div className='col-4 '>
-                    <div className='main-footer__wrap-end'>
+                    <div className='footer__wrap-end'>
                         <p>Адрес</p>
                         <h4>г. Бишкек, Кок-Джар, 51</h4>
                         <ul>
@@ -21,7 +21,7 @@ return (
                             <li>+996 (990) 44-11-44</li>
                         </ul>
                     </div>
-                    <div className='main-footer__wrap-end'>
+                    <div className='footer__wrap-end'>
                         <p>Aдрес</p>
                         <h4>г. Ош, ул. Ленина, 306</h4>
                         <h4>г. Ош, пр. Масалиева, 25а</h4>
@@ -32,7 +32,7 @@ return (
                             <li><a>+996 (705) 44-22-44</a></li>
                         </ul>
                     </div>                    
-                    <div className='main-footer__wrap-end'>
+                    <div className='footer__wrap-end'>
                             <p>Адрес</p>
                             <h4>Большая Серпуховская 12/11стр 2</h4>
                             <ul>
@@ -41,7 +41,7 @@ return (
                                 <li><a>+7 977 267 11 44</a></li>
                             </ul>
                     </div>
-                    <div className='main-footer__wrap-end'>
+                    <div className='footer__wrap-end'>
                             <p>Адрес</p>
                             <h4>г. Джалал-Абад</h4>
                             <ul>
@@ -50,7 +50,7 @@ return (
                                 <li><a>+996 (770) 442244</a></li>
                             </ul>
                     </div>
-                    <div className='main-footer__wrap-end'>
+                    <div className='footer__wrap-end'>
                             <p>Адрес</p>
                             <h4>г. Кызыл-кия</h4>
                             <ul>
@@ -66,7 +66,7 @@ return (
 
             <div className='row'>
                 <p className='piece'>Почта</p>
-                <a href=''>manager.emakom@gmail.com</a>
+                <a  className='piece' href=''>manager.emakom@gmail.com</a>
 
             </div>
             <hr/>
@@ -83,7 +83,8 @@ return (
                 <div className=' col-4'>
                     <h4>Карта Сайта</h4>
                     <ul>
-                        <li><Link className='map' to={'/obout'}>About</Link></li>
+                        <li><Link className='map' to={'/obout'}> О КОМПАНИИ</Link></li>
+                        <li><a className='map' href='https://jay631.github.io/sales-departments/'>ОТДЕЛЫ ПРОДАЖ</a></li>
                     </ul>
                 </div>
             </div>

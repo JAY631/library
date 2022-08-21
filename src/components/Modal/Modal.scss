@@ -1,0 +1,142 @@
+@keyframes showBackdrop {
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+@keyframes showModal {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+     }
+     100%{
+        opacity: 1;
+        transform: translateX(0px);
+     }
+}
+
+
+.backdrop{
+top: 0; right: 0; left: 0; bottom: 0;
+display: flex;
+justify-content: center;
+background-color: rgba(119, 119, 119, 0.144);
+opacity: 0.76;
+transition: all .3s;
+animation: showBackdrop .5s ease-out;
+height: 100%;
+width: 100%;
+}
+.modal{
+    position: fixed;
+    background-color: white;
+    width: 370px;
+    height: 705px;
+    margin-left: 979px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.548);
+    transition: all .3s;
+    animation: showModal .5s ease-out;
+    overflow: auto;
+    z-index: 100;
+}
+.modal__header{
+    padding: 10px 20px;
+}
+.modal__header h3{
+    margin: 0;
+    font-size: 20px;
+}
+.modal__body{
+    padding: 10px 20px;
+}
+.backdrop__hide{
+opacity: 0;
+}
+.backdrop__hide .modal{
+    opacity: 0;
+    transform: rotateX(-500px);
+}
+.modal__header button{
+    padding: 10px;
+    border-radius: 80px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: solid black 1px;
+    margin-left: 300px;
+}
+.modal__header-img{
+    width: 240px;
+    //text-align: center;
+    margin-left: 40px;
+}
+.modal__body-text{
+    text-align: center;
+    color: #54595F;
+    font-size: 20px;
+}
+.modal__body-link{
+    text-decoration: none;
+    text-align: center;
+    color: #003D99;
+    font-weight: bold;
+    font-size: 33px;
+    margin-left: 28px;
+}
+.modal__link{
+    text-align: center;
+    margin-bottom: 45px;
+    &-l{
+        background-color: #C92875;
+        font-size: 25px;
+        text-align: center;
+        padding: 0.5em;
+        margin-right: 5px;
+        cursor: pointer;
+        border-radius: 6px;
+        color: white;
+    }
+    &-li{
+        border-radius: 6px;
+        font-size: 25px;
+        text-align: center;
+        padding: 0.5em;
+        cursor: pointer;
+        background-color: #3b5998;
+        color: white;
+    }
+}
+.modal__contact{
+    text-align: center;
+    margin-bottom: 5px;
+    &-link{
+      background-color: red;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: white;
+      display: inline-block;
+      line-height: 1;
+      font-family: "Montserrat", Sans-serif; 
+      border-radius: 4px;
+    }
+}
+.modal__contactt{
+    text-align: center;
+    &-linc{ 
+      border-radius: 4px;
+      font-family: "Montserrat", Sans-serif;
+      background-color: #43c554;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: white;
+      display: inline-block;
+      line-height: 1;
+    }
+}
