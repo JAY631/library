@@ -1,6 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
+    //display: inline-block;
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -9,13 +10,11 @@
     flex-wrap: wrap;
     z-index: 1;
     column-gap: 30px;
+    line-height: 35px;
     &__logo{
     text-decoration: none;
     text-transform: uppercase;
         color: #003d99;
-        &-img{
-            
-        }
     &-link{
         text-decoration: none;
         text-transform: uppercase;
@@ -31,14 +30,31 @@
         padding: 10px 10px;
         -webkit-border-radius: 5px;
         border-radius: 5px;
-        position: relative;
+        //position: relative;
         display: inline-block;
         background-color: #ff0000;
         color: #ffffff;
         border: solid #ff0000 1px;
-        
         cursor: pointer;
         margin-left: 37px;
         }
     }
+    &__menu{
+      text-decoration: none;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+      font-size: 21px;
+      line-height: 28px;
+      &-link{
+        color: #003d99;
+      }
+    }
+}
+.mobile-btn{
+  display: none;
+}
+.burger{
+  display: none;
 }

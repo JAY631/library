@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Novigation = () => {
   return (
     <div>
-        <nav>
-            
-        </nav>
+      <nav></nav>
     </div>
-  )
-}
+  );
+};
 
 export default Novigation;
